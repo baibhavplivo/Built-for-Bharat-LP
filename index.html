@@ -71,12 +71,12 @@
     }
 
     /* Scroll-triggered fade-in */
-    .animate-on-scroll {
+    .bfb-animate-on-scroll {
       opacity: 0;
       transform: translateY(24px);
       transition: opacity 0.7s ease, transform 0.7s ease;
     }
-    .animate-on-scroll.visible {
+    .bfb-animate-on-scroll.bfb-visible {
       opacity: 1;
       transform: translateY(0);
     }
@@ -84,37 +84,37 @@
     /* ════════════════════════════════════════════
        HERO SECTION
     ════════════════════════════════════════════ */
-    .hero {
+    .bfb-hero {
       position: relative;
       overflow: hidden;
       width: 100%;
       height: 100vh;
       z-index: 0;
     }
-    .hero-bg {
+    .bfb-hero-bg {
       position: absolute;
       inset: 0;
       z-index: 0;
       background: url(/images/build-for-bharat/backdrop.png) no-repeat top center / cover;
     }
-    .hero-motif {
+    .bfb-hero-motif {
       position: absolute;
       top: 0; left: 0; right: 0;
       z-index: 60;
-      height: 56px;
+      height: 45px;
       background: url(/images/build-for-bharat/motif.svg) repeat-x;
-      background-size: auto 56px;
-      opacity: 0.5;
+      background-size: auto 45px;
+      opacity: 0.4;
     }
 
     /* Logos bar */
-    .hero-logos {
+    .bfb-hero-logos {
       position: absolute;
       top: 0; left: 0; right: 0;
       z-index: 50;
       padding: 4rem 1rem 0;
     }
-    .hero-logos-inner {
+    .bfb-hero-logos-inner {
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -122,11 +122,11 @@
       max-width: 80rem;
       margin: 0 auto;
     }
-    .logo-plivo  { height: 1.25rem; width: auto; }
-    .logo-summit { height: 2rem;    width: auto; }
+    .bfb-logo-plivo  { height: 1.25rem; width: auto; }
+    .bfb-logo-summit { height: 2rem;    width: auto; }
 
     /* Hero content */
-    .hero-content {
+    .bfb-hero-content {
       position: relative;
       z-index: 50;
       display: flex;
@@ -137,7 +137,7 @@
       padding: 0 1.25rem;
       text-align: center;
     }
-    .hero-badge {
+    .bfb-hero-badge {
       display: inline-flex;
       align-items: center;
       border-radius: 9999px;
@@ -155,7 +155,7 @@
       opacity: 0;
       animation: fadeInUp 0.6s ease-in-out 0.2s forwards;
     }
-    .hero-headline {
+    .bfb-hero-headline {
       font-family: var(--font-sora), sans-serif;
       font-size: 2.75rem;
       font-weight: 400;
@@ -166,14 +166,14 @@
       opacity: 0;
       animation: fadeInUpLarge 0.8s ease-in-out 0.3s forwards;
     }
-    .hero-headline-gradient {
+    .bfb-hero-headline-gradient {
       background-image: linear-gradient(90deg, #323DFE 0%, #a0a8ff 25%, #ffffff 50%, #a0a8ff 75%, #323DFE 100%);
       -webkit-background-clip: text;
       background-clip: text;
       -webkit-text-fill-color: transparent;
       color: transparent;
     }
-    .hero-subheadline {
+    .bfb-hero-subheadline {
       font-size: 1rem;
       color: var(--gray-200);
       font-weight: 300;
@@ -183,12 +183,12 @@
       opacity: 0;
       animation: fadeInUp 0.6s ease-in-out 0.5s forwards;
     }
-    .hero-cta-wrap {
+    .bfb-hero-cta-wrap {
       margin-bottom: 2rem;
       opacity: 0;
       animation: fadeInUp 0.6s ease-in-out 0.6s forwards;
     }
-    .hero-cta {
+    .bfb-hero-cta {
       display: inline-flex;
       align-items: center;
       justify-content: center;
@@ -201,12 +201,12 @@
       box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -4px rgba(0,0,0,0.1);
       transition: all 0.2s;
     }
-    .hero-cta:hover {
+    .bfb-hero-cta:hover {
       background: var(--gray-100);
       box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1), 0 8px 10px -6px rgba(0,0,0,0.1);
       transform: translateY(-2px);
     }
-    .hero-desc {
+    .bfb-hero-desc {
       font-size: 0.875rem;
       color: #fff;
       max-width: 42rem;
@@ -218,7 +218,7 @@
     }
 
     /* Scroll indicator */
-    .scroll-indicator {
+    .bfb-scroll-indicator {
       position: absolute;
       bottom: 2rem;
       left: 50%;
@@ -230,7 +230,7 @@
       opacity: 0;
       animation: fadeIn 0.6s ease-in-out 1.2s forwards;
     }
-    .scroll-chevrons {
+    .bfb-scroll-chevrons {
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -241,37 +241,37 @@
     /* ════════════════════════════════════════════
        CLIENT LOGOS MARQUEE
     ════════════════════════════════════════════ */
-    .client-logos {
+    .bfb-client-logos {
       background: #fff;
       padding: 1.5rem 0;
     }
-    .marquee-mask {
+    .bfb-marquee-mask {
       -webkit-mask-image: linear-gradient(to right, transparent 0%, rgba(0,0,0,0.15) 5%, rgba(0,0,0,0.4) 10%, rgba(0,0,0,0.7) 18%, rgba(0,0,0,0.9) 25%, black 35%, black 65%, rgba(0,0,0,0.9) 75%, rgba(0,0,0,0.7) 82%, rgba(0,0,0,0.4) 90%, rgba(0,0,0,0.15) 95%, transparent 100%);
       mask-image: linear-gradient(to right, transparent 0%, rgba(0,0,0,0.15) 5%, rgba(0,0,0,0.4) 10%, rgba(0,0,0,0.7) 18%, rgba(0,0,0,0.9) 25%, black 35%, black 65%, rgba(0,0,0,0.9) 75%, rgba(0,0,0,0.7) 82%, rgba(0,0,0,0.4) 90%, rgba(0,0,0,0.15) 95%, transparent 100%);
     }
-    .marquee-track {
+    .bfb-marquee-track {
       display: flex;
       overflow: hidden;
       padding: 0.5rem;
       gap: 3.5rem;
     }
-    .marquee-track:hover .marquee-group {
+    .bfb-marquee-track:hover .bfb-marquee-group {
       animation-play-state: paused;
     }
-    .marquee-group {
+    .bfb-marquee-group {
       display: flex;
       flex-shrink: 0;
       gap: 3.5rem;
       animation: marquee 40s linear infinite;
     }
-    .marquee-item {
+    .bfb-marquee-item {
       display: flex;
       width: 90px;
       flex-shrink: 0;
       align-items: center;
       justify-content: center;
     }
-    .marquee-item img {
+    .bfb-marquee-item img {
       height: 1.5rem;
       width: auto;
       object-fit: contain;
@@ -279,25 +279,25 @@
       filter: grayscale(100%);
       transition: opacity 0.2s;
     }
-    .marquee-item img.logo-sm { height: 1.25rem; }
-    .marquee-item img:hover { opacity: 0.8; }
+    .bfb-marquee-item img.bfb-logo-sm { height: 1.25rem; }
+    .bfb-marquee-item img:hover { opacity: 0.8; }
 
     /* ════════════════════════════════════════════
        HOW IT WORKS
     ════════════════════════════════════════════ */
-    .how-it-works {
+    .bfb-how-it-works {
       padding: 2.5rem 0;
       background: #fff;
     }
-    .container {
+    .bfb-container {
       margin: 0 auto;
       padding: 0 1rem;
     }
-    .container--lg { max-width: 80rem; }
-    .container--md { max-width: 56rem; }
-    .container--sm { max-width: 48rem; }
+    .bfb-container--lg { max-width: 80rem; }
+    .bfb-container--md { max-width: 56rem; }
+    .bfb-container--sm { max-width: 48rem; }
 
-    .section-label {
+    .bfb-section-label {
       display: inline-block;
       font-size: 0.875rem;
       font-weight: 500;
@@ -306,11 +306,11 @@
       letter-spacing: 0.025em;
       text-transform: uppercase;
     }
-    .section-header {
+    .bfb-section-header {
       text-align: center;
       margin-bottom: 3rem;
     }
-    .section-title {
+    .bfb-section-title {
       font-family: var(--font-sora), sans-serif;
       font-size: 1.75rem;
       font-weight: 400;
@@ -320,57 +320,57 @@
     }
 
     /* Steps grid */
-    .steps-grid {
+    .bfb-steps-grid {
       display: grid;
       grid-template-columns: 1fr;
       gap: 2rem;
       margin-bottom: 3.5rem;
     }
-    .step { display: flex; flex-direction: column; }
-    .step-header {
+    .bfb-step { display: flex; flex-direction: column; }
+    .bfb-step-header {
       display: flex;
       align-items: center;
       gap: 0.75rem;
       margin-bottom: 1rem;
     }
-    .step-number {
+    .bfb-step-number {
       font-family: var(--font-sora), sans-serif;
       font-size: 2rem;
       font-weight: 600;
       color: var(--gray-300);
     }
-    .step-line {
+    .bfb-step-line {
       height: 1px;
       flex: 1;
       background: var(--gray-200);
     }
-    .step-title {
+    .bfb-step-title {
       font-family: var(--font-inter), sans-serif;
       font-size: 1.125rem;
       font-weight: 600;
       color: #000;
       margin-bottom: 0.5rem;
     }
-    .step-desc {
+    .bfb-step-desc {
       font-size: 0.9375rem;
       color: var(--gray-600);
       line-height: 1.625;
     }
 
     /* Example callout */
-    .example-callout {
+    .bfb-example-callout {
       position: relative;
       overflow: hidden;
     }
-    .example-motif-bg {
+    .bfb-example-motif-bg {
       position: absolute;
       inset: 0;
       background: url(/images/build-for-bharat/motif.svg) repeat-x;
-      background-size: auto 50%;
+      background-size: auto 25%;
       background-position: center;
       opacity: 0.1;
     }
-    .example-card-wrap {
+    .bfb-example-card-wrap {
       position: relative;
       z-index: 10;
       display: flex;
@@ -378,7 +378,7 @@
       justify-content: center;
       padding: 2rem 1rem;
     }
-    .example-card {
+    .bfb-example-card {
       max-width: 32rem;
       width: 100%;
       border-radius: 0.75rem;
@@ -386,20 +386,20 @@
       text-align: center;
       background: radial-gradient(ellipse at 50% 40%, #131340 0%, #0a0a1a 60%);
     }
-    .example-math {
+    .bfb-example-math {
       color: var(--gray-300);
       font-size: 1rem;
       margin-bottom: 0.5rem;
     }
-    .example-math .highlight {
+    .bfb-example-math .bfb-highlight {
       font-weight: 600;
       color: #fff;
     }
-    .example-math .arrow {
+    .bfb-example-math .bfb-arrow {
       color: var(--gray-500);
       margin: 0 0.25rem;
     }
-    .example-total {
+    .bfb-example-total {
       font-family: var(--font-inter), sans-serif;
       font-size: 1.25rem;
       font-weight: 700;
@@ -409,83 +409,83 @@
     /* ════════════════════════════════════════════
        OFFER TERMS
     ════════════════════════════════════════════ */
-    .offer-terms {
+    .bfb-offer-terms {
       padding: 2.5rem 0;
       background: #fff;
     }
-    .terms-list {
+    .bfb-terms-list {
       border-radius: 0.75rem;
       border: 1px solid var(--gray-200);
       overflow: hidden;
     }
-    .term-row {
+    .bfb-term-row {
       display: flex;
       gap: 0.75rem;
       padding: 0.875rem 1rem;
     }
-    .term-row:not(:last-child) {
+    .bfb-term-row:not(:last-child) {
       border-bottom: 1px solid var(--gray-100);
     }
-    .term-icon {
+    .bfb-term-icon {
       flex-shrink: 0;
       margin-top: 2px;
       color: var(--color-plivo-blue);
     }
-    .term-icon svg {
+    .bfb-term-icon svg {
       width: 1.25rem;
       height: 1.25rem;
     }
-    .term-body {
+    .bfb-term-body {
       display: flex;
       flex-direction: column;
       gap: 0.25rem;
       flex: 1;
     }
-    .term-label {
+    .bfb-term-label {
       font-size: 0.875rem;
       font-weight: 600;
       color: #000;
     }
-    .term-value {
+    .bfb-term-value {
       font-size: 0.875rem;
       color: var(--gray-600);
       line-height: 1.625;
     }
 
     /* Questions callout */
-    .questions-callout {
+    .bfb-questions-callout {
       margin-top: 2rem;
       border-radius: 0.75rem;
       border: 1px solid var(--gray-200);
       padding: 1.25rem 1.5rem;
       text-align: center;
     }
-    .questions-callout p {
+    .bfb-questions-callout p {
       font-size: 0.875rem;
       color: var(--gray-600);
     }
-    .questions-callout a {
+    .bfb-questions-callout a {
       font-weight: 500;
       color: #000;
       text-decoration: underline;
       text-underline-offset: 2px;
       transition: color 0.2s;
     }
-    .questions-callout a:hover {
+    .bfb-questions-callout a:hover {
       color: var(--color-plivo-purple);
     }
 
     /* ════════════════════════════════════════════
        FOOTER CTA
     ════════════════════════════════════════════ */
-    .footer-cta {
+    .bfb-footer-cta {
       position: relative;
       overflow: hidden;
       padding: 5rem 0;
       background: radial-gradient(ellipse at 50% 60%, #131340 0%, #0a0a1a 60%);
     }
-    .footer-motif-top,
-    .footer-motif-bottom {
+    .bfb-footer-motif-top,
+    .bfb-footer-motif-bottom {
       position: absolute;
       left: 0; right: 0;
       z-index: 10;
@@ -494,9 +494,9 @@
       background-size: auto 56px;
       opacity: 0.5;
     }
-    .footer-motif-top    { top: 0; }
-    .footer-motif-bottom { bottom: 0; }
-    .footer-glow {
+    .bfb-footer-motif-top    { top: 0; }
+    .bfb-footer-motif-bottom { bottom: 0; }
+    .bfb-footer-glow {
       position: absolute;
       top: 0;
       left: 50%;
@@ -508,7 +508,7 @@
       background: radial-gradient(ellipse at 50% 0%, rgba(100,120,255,0.3) 0%, transparent 70%);
       pointer-events: none;
     }
-    .footer-content {
+    .bfb-footer-content {
       position: relative;
       z-index: 10;
       display: flex;
@@ -519,7 +519,7 @@
       padding: 0 1rem;
       text-align: center;
     }
-    .footer-title {
+    .bfb-footer-title {
       font-family: var(--font-sora), sans-serif;
       font-size: 1.75rem;
       font-weight: 400;
@@ -527,13 +527,13 @@
       letter-spacing: -0.02em;
       color: #fff;
     }
-    .footer-desc {
+    .bfb-footer-desc {
       max-width: 42rem;
       margin: 1rem auto 0;
       font-size: 1rem;
       color: var(--gray-400);
     }
-    .footer-cta-btn {
+    .bfb-footer-cta-btn {
       display: inline-flex;
       align-items: center;
       justify-content: center;
@@ -546,7 +546,7 @@
       margin-top: 2rem;
       transition: all 0.2s;
     }
-    .footer-cta-btn:hover {
+    .bfb-footer-cta-btn:hover {
       background: var(--gray-100);
       box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1), 0 8px 10px -6px rgba(0,0,0,0.1);
       transform: translateY(-2px);
@@ -556,62 +556,62 @@
        RESPONSIVE
     ════════════════════════════════════════════ */
     @media (min-width: 640px) {
-      .hero-logos { padding-top: 5rem; padding-left: 2rem; padding-right: 2rem; }
-      .logo-plivo  { height: 1.75rem; }
-      .logo-summit { height: 3rem; }
-      .hero-badge  { font-size: 0.875rem; margin-bottom: 1.5rem; }
-      .hero-headline { font-size: 3rem; margin-bottom: 1.5rem; }
-      .hero-subheadline { font-size: 1.25rem; margin-bottom: 3rem; }
-      .hero-cta { padding: 1rem 2.5rem; font-size: 1.125rem; }
-      .hero-cta-wrap { margin-bottom: 3.5rem; }
-      .hero-desc { font-size: 1rem; }
+      .bfb-hero-logos { padding-top: 5rem; padding-left: 2rem; padding-right: 2rem; }
+      .bfb-logo-plivo  { height: 1.75rem; }
+      .bfb-logo-summit { height: 3rem; }
+      .bfb-hero-badge  { font-size: 0.875rem; margin-bottom: 1.5rem; }
+      .bfb-hero-headline { font-size: 3rem; margin-bottom: 1.5rem; }
+      .bfb-hero-subheadline { font-size: 1.25rem; margin-bottom: 3rem; }
+      .bfb-hero-cta { padding: 1rem 2.5rem; font-size: 1.125rem; }
+      .bfb-hero-cta-wrap { margin-bottom: 3.5rem; }
+      .bfb-hero-desc { font-size: 1rem; }
 
-      .client-logos { padding: 2rem 0; }
+      .bfb-client-logos { padding: 2rem 0; }
 
-      .how-it-works { padding: 3rem 0; }
-      .section-header { margin-bottom: 4rem; }
-      .section-title { font-size: 2rem; }
-      .steps-grid { grid-template-columns: repeat(2, 1fr); }
-      .example-card-wrap { padding: 2.5rem 1rem; }
-      .example-card { padding: 1.5rem 2.5rem; }
-      .example-math { font-size: 1.125rem; }
-      .example-total { font-size: 1.5rem; }
+      .bfb-how-it-works { padding: 3rem 0; }
+      .bfb-section-header { margin-bottom: 4rem; }
+      .bfb-section-title { font-size: 2rem; }
+      .bfb-steps-grid { grid-template-columns: repeat(2, 1fr); }
+      .bfb-example-card-wrap { padding: 2.5rem 1rem; }
+      .bfb-example-card { padding: 1.5rem 2.5rem; }
+      .bfb-example-math { font-size: 1.125rem; }
+      .bfb-example-total { font-size: 1.5rem; }
 
-      .offer-terms { padding: 3rem 0; }
-      .term-row { gap: 1rem; padding: 0.875rem 1.25rem; }
-      .term-body {
+      .bfb-offer-terms { padding: 3rem 0; }
+      .bfb-term-row { gap: 1rem; padding: 0.875rem 1.25rem; }
+      .bfb-term-body {
         flex-direction: row;
         gap: 2rem;
       }
-      .term-label-col { width: 160px; flex-shrink: 0; }
+      .bfb-term-label-col { width: 160px; flex-shrink: 0; }
 
-      .footer-cta { padding: 7rem 0; }
-      .footer-title { font-size: 2rem; }
-      .footer-desc { font-size: 1.125rem; }
+      .bfb-footer-cta { padding: 7rem 0; }
+      .bfb-footer-title { font-size: 2rem; }
+      .bfb-footer-desc { font-size: 1.125rem; }
     }
 
     @media (min-width: 768px) {
-      .hero-headline { font-size: 4.5rem; }
-      .hero-subheadline { font-size: 1.5rem; }
-      .section-title { font-size: 2.5rem; }
+      .bfb-hero-headline { font-size: 4.5rem; }
+      .bfb-hero-subheadline { font-size: 1.5rem; }
+      .bfb-section-title { font-size: 2.5rem; }
     }
 
     @media (min-width: 1024px) {
-      .hero-logos { padding-left: 3rem; padding-right: 3rem; }
-      .logo-plivo  { height: 2rem; }
-      .logo-summit { height: 3.5rem; }
-      .hero-headline { font-size: 5.5rem; }
-      .hero-desc { font-size: 1.125rem; }
+      .bfb-hero-logos { padding-left: 3rem; padding-right: 3rem; }
+      .bfb-logo-plivo  { height: 2rem; }
+      .bfb-logo-summit { height: 3.5rem; }
+      .bfb-hero-headline { font-size: 5.5rem; }
+      .bfb-hero-desc { font-size: 1.125rem; }
 
-      .client-logos { padding: 2.5rem 0; }
+      .bfb-client-logos { padding: 2.5rem 0; }
 
-      .how-it-works { padding: 3.75rem 0; }
-      .steps-grid { grid-template-columns: repeat(4, 1fr); }
+      .bfb-how-it-works { padding: 3.75rem 0; }
+      .bfb-steps-grid { grid-template-columns: repeat(4, 1fr); }
 
-      .offer-terms { padding: 3.75rem 0; }
+      .bfb-offer-terms { padding: 3.75rem 0; }
 
-      .footer-cta { padding: 9rem 0; }
-      .footer-title { font-size: 2.5rem; }
+      .bfb-footer-cta { padding: 9rem 0; }
+      .bfb-footer-title { font-size: 2.5rem; }
     }
   </style>
 </head>
@@ -619,34 +619,34 @@
   <main>
 
     <!-- ════════════════ HERO SECTION ════════════════ -->
-    <div class="hero">
-      <div class="hero-bg"></div>
-      <div class="hero-motif"></div>
+    <div class="bfb-hero">
+      <div class="bfb-hero-bg"></div>
+      <div class="bfb-hero-motif"></div>
 
-      <div class="hero-logos">
-        <div class="hero-logos-inner">
-          <img src="/images/build-for-bharat/plivo-logo.svg" alt="Plivo" class="logo-plivo" />
-          <img src="/images/build-for-bharat/ai-summit-logo.svg" alt="AI Impact Summit India 2026" class="logo-summit" />
+      <div class="bfb-hero-logos">
+        <div class="bfb-hero-logos-inner">
+          <img src="/images/build-for-bharat/plivo-logo.svg" alt="Plivo" class="bfb-logo-plivo" />
+          <img src="/images/build-for-bharat/ai-summit-logo.svg" alt="AI Impact Summit India 2026" class="bfb-logo-summit" />
         </div>
       </div>
 
-      <div class="hero-content">
-        <span class="hero-badge">India AI Summit 2026</span>
-        <h1 class="hero-headline">
-          <span class="hero-headline-gradient">Built for Bharat</span>
+      <div class="bfb-hero-content">
+        <span class="bfb-hero-badge">India AI Summit 2026</span>
+        <h1 class="bfb-hero-headline">
+          <span class="bfb-hero-headline-gradient">Built for Bharat</span>
         </h1>
-        <p class="hero-subheadline">100% extra credits on every recharge. Feb 16-20 only.</p>
-        <div class="hero-cta-wrap">
-          <a href="https://console.plivo.com/accounts/register/" class="hero-cta">Sign Up Now</a>
+        <p class="bfb-hero-subheadline">100% extra credits on every recharge. Feb 16-20 only.</p>
+        <div class="bfb-hero-cta-wrap">
+          <a href="https://console.plivo.com/accounts/register/" class="bfb-hero-cta">Sign Up Now</a>
         </div>
-        <p class="hero-desc">
+        <p class="bfb-hero-desc">
           Sign up during India AI Summit week and we'll match every recharge you
           make. No code. No limits. Applied automatically.
         </p>
       </div>
 
-      <div class="scroll-indicator">
-        <div class="scroll-chevrons">
+      <div class="bfb-scroll-indicator">
+        <div class="bfb-scroll-chevrons">
           <svg width="20" height="12" viewBox="0 0 20 12" fill="none" style="color:rgba(255,255,255,0.6)">
             <path d="M2 2L10 10L18 2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
@@ -658,126 +658,126 @@
     </div>
 
     <!-- ════════════════ CLIENT LOGOS ════════════════ -->
-    <section class="client-logos">
-      <div class="marquee-mask">
-        <div class="marquee-track">
-          <div class="marquee-group">
-            <div class="marquee-item"><img src="/images/logos/meta.svg" alt="Meta" /></div>
-            <div class="marquee-item"><img src="/images/logos/uber.svg" alt="Uber" /></div>
-            <div class="marquee-item"><img src="/images/logos/hoka.svg" alt="Hoka" class="logo-sm" /></div>
-            <div class="marquee-item"><img src="/images/logos/discord.svg" alt="Discord" /></div>
-            <div class="marquee-item"><img src="/images/logos/docusign.svg" alt="DocuSign" /></div>
-            <div class="marquee-item"><img src="/images/logos/trip.svg" alt="Trip.com" /></div>
-            <div class="marquee-item"><img src="/images/logos/godaddy.svg" alt="GoDaddy" /></div>
-            <div class="marquee-item"><img src="/images/logos/atomberg.svg" alt="Atomberg" /></div>
-            <div class="marquee-item"><img src="/images/logos/tata1mg.svg" alt="Tata 1mg" /></div>
+    <section class="bfb-client-logos">
+      <div class="bfb-marquee-mask">
+        <div class="bfb-marquee-track">
+          <div class="bfb-marquee-group">
+            <div class="bfb-marquee-item"><img src="/images/logos/meta.svg" alt="Meta" /></div>
+            <div class="bfb-marquee-item"><img src="/images/logos/uber.svg" alt="Uber" /></div>
+            <div class="bfb-marquee-item"><img src="/images/logos/hoka.svg" alt="Hoka" class="bfb-logo-sm" /></div>
+            <div class="bfb-marquee-item"><img src="/images/logos/discord.svg" alt="Discord" /></div>
+            <div class="bfb-marquee-item"><img src="/images/logos/docusign.svg" alt="DocuSign" /></div>
+            <div class="bfb-marquee-item"><img src="/images/logos/trip.svg" alt="Trip.com" /></div>
+            <div class="bfb-marquee-item"><img src="/images/logos/godaddy.svg" alt="GoDaddy" /></div>
+            <div class="bfb-marquee-item"><img src="/images/logos/atomberg.svg" alt="Atomberg" /></div>
+            <div class="bfb-marquee-item"><img src="/images/logos/tata1mg.svg" alt="Tata 1mg" /></div>
           </div>
-          <div class="marquee-group">
-            <div class="marquee-item"><img src="/images/logos/meta.svg" alt="Meta" /></div>
-            <div class="marquee-item"><img src="/images/logos/uber.svg" alt="Uber" /></div>
-            <div class="marquee-item"><img src="/images/logos/hoka.svg" alt="Hoka" class="logo-sm" /></div>
-            <div class="marquee-item"><img src="/images/logos/discord.svg" alt="Discord" /></div>
-            <div class="marquee-item"><img src="/images/logos/docusign.svg" alt="DocuSign" /></div>
-            <div class="marquee-item"><img src="/images/logos/trip.svg" alt="Trip.com" /></div>
-            <div class="marquee-item"><img src="/images/logos/godaddy.svg" alt="GoDaddy" /></div>
-            <div class="marquee-item"><img src="/images/logos/atomberg.svg" alt="Atomberg" /></div>
-            <div class="marquee-item"><img src="/images/logos/tata1mg.svg" alt="Tata 1mg" /></div>
+          <div class="bfb-marquee-group">
+            <div class="bfb-marquee-item"><img src="/images/logos/meta.svg" alt="Meta" /></div>
+            <div class="bfb-marquee-item"><img src="/images/logos/uber.svg" alt="Uber" /></div>
+            <div class="bfb-marquee-item"><img src="/images/logos/hoka.svg" alt="Hoka" class="bfb-logo-sm" /></div>
+            <div class="bfb-marquee-item"><img src="/images/logos/discord.svg" alt="Discord" /></div>
+            <div class="bfb-marquee-item"><img src="/images/logos/docusign.svg" alt="DocuSign" /></div>
+            <div class="bfb-marquee-item"><img src="/images/logos/trip.svg" alt="Trip.com" /></div>
+            <div class="bfb-marquee-item"><img src="/images/logos/godaddy.svg" alt="GoDaddy" /></div>
+            <div class="bfb-marquee-item"><img src="/images/logos/atomberg.svg" alt="Atomberg" /></div>
+            <div class="bfb-marquee-item"><img src="/images/logos/tata1mg.svg" alt="Tata 1mg" /></div>
           </div>
-          <div class="marquee-group">
-            <div class="marquee-item"><img src="/images/logos/meta.svg" alt="Meta" /></div>
-            <div class="marquee-item"><img src="/images/logos/uber.svg" alt="Uber" /></div>
-            <div class="marquee-item"><img src="/images/logos/hoka.svg" alt="Hoka" class="logo-sm" /></div>
-            <div class="marquee-item"><img src="/images/logos/discord.svg" alt="Discord" /></div>
-            <div class="marquee-item"><img src="/images/logos/docusign.svg" alt="DocuSign" /></div>
-            <div class="marquee-item"><img src="/images/logos/trip.svg" alt="Trip.com" /></div>
-            <div class="marquee-item"><img src="/images/logos/godaddy.svg" alt="GoDaddy" /></div>
-            <div class="marquee-item"><img src="/images/logos/atomberg.svg" alt="Atomberg" /></div>
-            <div class="marquee-item"><img src="/images/logos/tata1mg.svg" alt="Tata 1mg" /></div>
+          <div class="bfb-marquee-group">
+            <div class="bfb-marquee-item"><img src="/images/logos/meta.svg" alt="Meta" /></div>
+            <div class="bfb-marquee-item"><img src="/images/logos/uber.svg" alt="Uber" /></div>
+            <div class="bfb-marquee-item"><img src="/images/logos/hoka.svg" alt="Hoka" class="bfb-logo-sm" /></div>
+            <div class="bfb-marquee-item"><img src="/images/logos/discord.svg" alt="Discord" /></div>
+            <div class="bfb-marquee-item"><img src="/images/logos/docusign.svg" alt="DocuSign" /></div>
+            <div class="bfb-marquee-item"><img src="/images/logos/trip.svg" alt="Trip.com" /></div>
+            <div class="bfb-marquee-item"><img src="/images/logos/godaddy.svg" alt="GoDaddy" /></div>
+            <div class="bfb-marquee-item"><img src="/images/logos/atomberg.svg" alt="Atomberg" /></div>
+            <div class="bfb-marquee-item"><img src="/images/logos/tata1mg.svg" alt="Tata 1mg" /></div>
           </div>
-          <div class="marquee-group">
-            <div class="marquee-item"><img src="/images/logos/meta.svg" alt="Meta" /></div>
-            <div class="marquee-item"><img src="/images/logos/uber.svg" alt="Uber" /></div>
-            <div class="marquee-item"><img src="/images/logos/hoka.svg" alt="Hoka" class="logo-sm" /></div>
-            <div class="marquee-item"><img src="/images/logos/discord.svg" alt="Discord" /></div>
-            <div class="marquee-item"><img src="/images/logos/docusign.svg" alt="DocuSign" /></div>
-            <div class="marquee-item"><img src="/images/logos/trip.svg" alt="Trip.com" /></div>
-            <div class="marquee-item"><img src="/images/logos/godaddy.svg" alt="GoDaddy" /></div>
-            <div class="marquee-item"><img src="/images/logos/atomberg.svg" alt="Atomberg" /></div>
-            <div class="marquee-item"><img src="/images/logos/tata1mg.svg" alt="Tata 1mg" /></div>
+          <div class="bfb-marquee-group">
+            <div class="bfb-marquee-item"><img src="/images/logos/meta.svg" alt="Meta" /></div>
+            <div class="bfb-marquee-item"><img src="/images/logos/uber.svg" alt="Uber" /></div>
+            <div class="bfb-marquee-item"><img src="/images/logos/hoka.svg" alt="Hoka" class="bfb-logo-sm" /></div>
+            <div class="bfb-marquee-item"><img src="/images/logos/discord.svg" alt="Discord" /></div>
+            <div class="bfb-marquee-item"><img src="/images/logos/docusign.svg" alt="DocuSign" /></div>
+            <div class="bfb-marquee-item"><img src="/images/logos/trip.svg" alt="Trip.com" /></div>
+            <div class="bfb-marquee-item"><img src="/images/logos/godaddy.svg" alt="GoDaddy" /></div>
+            <div class="bfb-marquee-item"><img src="/images/logos/atomberg.svg" alt="Atomberg" /></div>
+            <div class="bfb-marquee-item"><img src="/images/logos/tata1mg.svg" alt="Tata 1mg" /></div>
           </div>
         </div>
       </div>
     </section>
 
     <!-- ════════════════ HOW IT WORKS ════════════════ -->
-    <section class="how-it-works animate-on-scroll">
-      <div class="container container--lg">
-        <div class="section-header">
-          <span class="section-label">How It Works</span>
-          <h2 class="section-title">Go live with bonus credits in minutes</h2>
+    <section class="bfb-how-it-works bfb-animate-on-scroll">
+      <div class="bfb-container bfb-container--lg">
+        <div class="bfb-section-header">
+          <span class="bfb-section-label">How It Works</span>
+          <h2 class="bfb-section-title">Go live with bonus credits in minutes</h2>
         </div>
 
-        <div class="steps-grid">
-          <div class="step">
-            <div class="step-header">
-              <span class="step-number">01</span>
-              <div class="step-line"></div>
+        <div class="bfb-steps-grid">
+          <div class="bfb-step">
+            <div class="bfb-step-header">
+              <span class="bfb-step-number">01</span>
+              <div class="bfb-step-line"></div>
             </div>
-            <h3 class="step-title">Sign up</h3>
-            <p class="step-desc">Create your Plivo account between Feb 16-20, 2026</p>
+            <h3 class="bfb-step-title">Sign up</h3>
+            <p class="bfb-step-desc">Create your Plivo account between Feb 16-20, 2026</p>
           </div>
-          <div class="step">
-            <div class="step-header">
-              <span class="step-number">02</span>
-              <div class="step-line"></div>
+          <div class="bfb-step">
+            <div class="bfb-step-header">
+              <span class="bfb-step-number">02</span>
+              <div class="bfb-step-line"></div>
             </div>
-            <h3 class="step-title">Recharge</h3>
-            <p class="step-desc">Add credits to your account - any amount</p>
+            <h3 class="bfb-step-title">Recharge</h3>
+            <p class="bfb-step-desc">Add credits to your account - any amount</p>
           </div>
-          <div class="step">
-            <div class="step-header">
-              <span class="step-number">03</span>
-              <div class="step-line"></div>
+          <div class="bfb-step">
+            <div class="bfb-step-header">
+              <span class="bfb-step-number">03</span>
+              <div class="bfb-step-line"></div>
             </div>
-            <h3 class="step-title">Get matched</h3>
-            <p class="step-desc">100% bonus credits applied automatically within 24 hours</p>
+            <h3 class="bfb-step-title">Get matched</h3>
+            <p class="bfb-step-desc">100% bonus credits applied automatically within 24 hours</p>
           </div>
-          <div class="step">
-            <div class="step-header">
-              <span class="step-number">04</span>
+          <div class="bfb-step">
+            <div class="bfb-step-header">
+              <span class="bfb-step-number">04</span>
             </div>
-            <h3 class="step-title">Repeat</h3>
-            <p class="step-desc">Every recharge that week is matched. No limits.</p>
+            <h3 class="bfb-step-title">Repeat</h3>
+            <p class="bfb-step-desc">Every recharge that week is matched. No limits.</p>
           </div>
         </div>
       </div>
 
-      <div class="example-callout">
-        <div class="example-motif-bg"></div>
-        <div class="example-card-wrap">
-          <div class="example-card">
-            <p class="example-math">
-              You recharge <span class="highlight">&#8377;10,000</span>
-              <span class="arrow">&rarr;</span> You get
-              <span class="highlight">&#8377;10,000 bonus</span>
+      <div class="bfb-example-callout">
+        <div class="bfb-example-motif-bg"></div>
+        <div class="bfb-example-card-wrap">
+          <div class="bfb-example-card">
+            <p class="bfb-example-math">
+              You recharge <span class="bfb-highlight">&#8377;10,000</span>
+              <span class="bfb-arrow">&rarr;</span> You get
+              <span class="bfb-highlight">&#8377;10,000 bonus</span>
             </p>
-            <p class="example-total">&#8377;20,000 to build with</p>
+            <p class="bfb-example-total">&#8377;20,000 to build with</p>
           </div>
         </div>
       </div>
     </section>
 
     <!-- ════════════════ OFFER TERMS ════════════════ -->
-    <section class="offer-terms animate-on-scroll">
-      <div class="container container--md">
-        <div class="section-header">
-          <h2 class="section-title">Offer Terms</h2>
+    <section class="bfb-offer-terms bfb-animate-on-scroll">
+      <div class="bfb-container bfb-container--md">
+        <div class="bfb-section-header">
+          <h2 class="bfb-section-title">Offer Terms</h2>
         </div>
 
-        <div class="terms-list">
+        <div class="bfb-terms-list">
           <!-- Offer Period -->
-          <div class="term-row">
-            <div class="term-icon">
+          <div class="bfb-term-row">
+            <div class="bfb-term-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                 <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
                 <line x1="16" y1="2" x2="16" y2="6"/>
@@ -785,125 +785,125 @@
                 <line x1="3" y1="10" x2="21" y2="10"/>
               </svg>
             </div>
-            <div class="term-body">
-              <div class="term-label-col"><span class="term-label">Offer Period</span></div>
-              <div><p class="term-value">February 16, 2026, 12:00 AM IST - February 20, 2026, 11:59 PM IST</p></div>
+            <div class="bfb-term-body">
+              <div class="bfb-term-label-col"><span class="bfb-term-label">Offer Period</span></div>
+              <div><p class="bfb-term-value">February 16, 2026, 12:00 AM IST - February 20, 2026, 11:59 PM IST</p></div>
             </div>
           </div>
 
           <!-- Eligibility -->
-          <div class="term-row">
-            <div class="term-icon">
+          <div class="bfb-term-row">
+            <div class="bfb-term-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
                 <circle cx="9" cy="7" r="4"/>
                 <polyline points="16 11 18 13 22 9"/>
               </svg>
             </div>
-            <div class="term-body">
-              <div class="term-label-col"><span class="term-label">Eligibility</span></div>
-              <div><p class="term-value">This offer is applicable only to new accounts created during the specified offer period. Existing Plivo customers who open a new account will not qualify for this offer.</p></div>
+            <div class="bfb-term-body">
+              <div class="bfb-term-label-col"><span class="bfb-term-label">Eligibility</span></div>
+              <div><p class="bfb-term-value">This offer is applicable only to new accounts created during the specified offer period. Existing Plivo customers who open a new account will not qualify for this offer.</p></div>
             </div>
           </div>
 
           <!-- Bonus Credits -->
-          <div class="term-row">
-            <div class="term-icon">
+          <div class="bfb-term-row">
+            <div class="bfb-term-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
               </svg>
             </div>
-            <div class="term-body">
-              <div class="term-label-col"><span class="term-label">Bonus Credits</span></div>
-              <div><p class="term-value">100% match on every recharge during the Offer Period. No cap. Applied automatically within 24 hours.</p></div>
+            <div class="bfb-term-body">
+              <div class="bfb-term-label-col"><span class="bfb-term-label">Bonus Credits</span></div>
+              <div><p class="bfb-term-value">100% match on every recharge during the Offer Period. No cap. Applied automatically within 24 hours.</p></div>
             </div>
           </div>
 
           <!-- Usage -->
-          <div class="term-row">
-            <div class="term-icon">
+          <div class="bfb-term-row">
+            <div class="bfb-term-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                 <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
               </svg>
             </div>
-            <div class="term-body">
-              <div class="term-label-col"><span class="term-label">Usage</span></div>
-              <div><p class="term-value">Valid for all Plivo services - Voice AI, SMS, WhatsApp, Chat. Non-transferable. No cash value.</p></div>
+            <div class="bfb-term-body">
+              <div class="bfb-term-label-col"><span class="bfb-term-label">Usage</span></div>
+              <div><p class="bfb-term-value">Valid for all Plivo services - Voice AI, SMS, WhatsApp, Chat. Non-transferable. No cash value.</p></div>
             </div>
           </div>
 
           <!-- Expiration -->
-          <div class="term-row">
-            <div class="term-icon">
+          <div class="bfb-term-row">
+            <div class="bfb-term-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                 <circle cx="12" cy="12" r="10"/>
                 <polyline points="12 6 12 12 16 14"/>
               </svg>
             </div>
-            <div class="term-body">
-              <div class="term-label-col"><span class="term-label">Expiration</span></div>
-              <div><p class="term-value">Bonus credits expire 12 months from date of issue.</p></div>
+            <div class="bfb-term-body">
+              <div class="bfb-term-label-col"><span class="bfb-term-label">Expiration</span></div>
+              <div><p class="bfb-term-value">Bonus credits expire 12 months from date of issue.</p></div>
             </div>
           </div>
 
           <!-- Refunds -->
-          <div class="term-row">
-            <div class="term-icon">
+          <div class="bfb-term-row">
+            <div class="bfb-term-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                 <polyline points="1 4 1 10 7 10"/>
                 <path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"/>
               </svg>
             </div>
-            <div class="term-body">
-              <div class="term-label-col"><span class="term-label">Refunds</span></div>
-              <div><p class="term-value">Bonus credits are non-refundable. Refund on a paid recharge forfeits corresponding bonus.</p></div>
+            <div class="bfb-term-body">
+              <div class="bfb-term-label-col"><span class="bfb-term-label">Refunds</span></div>
+              <div><p class="bfb-term-value">Bonus credits are non-refundable. Refund on a paid recharge forfeits corresponding bonus.</p></div>
             </div>
           </div>
 
           <!-- Abuse -->
-          <div class="term-row">
-            <div class="term-icon">
+          <div class="bfb-term-row">
+            <div class="bfb-term-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
               </svg>
             </div>
-            <div class="term-body">
-              <div class="term-label-col"><span class="term-label">Abuse</span></div>
-              <div><p class="term-value">Plivo may revoke credits for fraudulent activity including multiple accounts, false information, or reselling.</p></div>
+            <div class="bfb-term-body">
+              <div class="bfb-term-label-col"><span class="bfb-term-label">Abuse</span></div>
+              <div><p class="bfb-term-value">Plivo may revoke credits for fraudulent activity including multiple accounts, false information, or reselling.</p></div>
             </div>
           </div>
 
           <!-- Modifications -->
-          <div class="term-row">
-            <div class="term-icon">
+          <div class="bfb-term-row">
+            <div class="bfb-term-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/>
                 <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/>
               </svg>
             </div>
-            <div class="term-body">
-              <div class="term-label-col"><span class="term-label">Modifications</span></div>
-              <div><p class="term-value">Plivo reserves the right to modify or end the Offer at any time without notice.</p></div>
+            <div class="bfb-term-body">
+              <div class="bfb-term-label-col"><span class="bfb-term-label">Modifications</span></div>
+              <div><p class="bfb-term-value">Plivo reserves the right to modify or end the Offer at any time without notice.</p></div>
             </div>
           </div>
 
           <!-- Liability -->
-          <div class="term-row">
-            <div class="term-icon">
+          <div class="bfb-term-row">
+            <div class="bfb-term-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                 <circle cx="12" cy="12" r="10"/>
                 <line x1="12" y1="8" x2="12" y2="12"/>
                 <line x1="12" y1="16" x2="12.01" y2="16"/>
               </svg>
             </div>
-            <div class="term-body">
-              <div class="term-label-col"><span class="term-label">Liability</span></div>
-              <div><p class="term-value">Plivo is not liable for indirect or consequential damages. Total liability limited to paid recharges during Offer Period.</p></div>
+            <div class="bfb-term-body">
+              <div class="bfb-term-label-col"><span class="bfb-term-label">Liability</span></div>
+              <div><p class="bfb-term-value">Plivo is not liable for indirect or consequential damages. Total liability limited to paid recharges during Offer Period.</p></div>
             </div>
           </div>
         </div>
 
-        <div class="questions-callout">
+        <div class="bfb-questions-callout">
           <p>
             Questions? Email
             <a href="mailto:events@plivo.com?subject=Build%20for%20Bharat%20Inquiry">events@plivo.com</a>
@@ -914,15 +914,15 @@
     </section>
 
     <!-- ════════════════ FOOTER CTA ════════════════ -->
-    <section class="footer-cta animate-on-scroll">
-      <div class="footer-motif-top"></div>
-      <div class="footer-glow"></div>
-      <div class="footer-motif-bottom"></div>
+    <section class="bfb-footer-cta bfb-animate-on-scroll">
+      <div class="bfb-footer-motif-top"></div>
+      <div class="bfb-footer-glow"></div>
+      <div class="bfb-footer-motif-bottom"></div>
 
-      <div class="footer-content">
-        <h2 class="footer-title">Start building your AI agent now</h2>
-        <p class="footer-desc">No coding required. Get your agents up and running in under 30 minutes.</p>
-        <a href="https://console.plivo.com/accounts/register/" class="footer-cta-btn">Sign Up Now</a>
+      <div class="bfb-footer-content">
+        <h2 class="bfb-footer-title">Start building your AI agent now</h2>
+        <p class="bfb-footer-desc">No coding required. Get your agents up and running in under 30 minutes.</p>
+        <a href="https://console.plivo.com/accounts/register/" class="bfb-footer-cta-btn">Sign Up Now</a>
       </div>
     </section>
 
@@ -931,11 +931,11 @@
   <!-- Intersection Observer for scroll-triggered animations -->
   <script>
     document.addEventListener('DOMContentLoaded', function () {
-      var elements = document.querySelectorAll('.animate-on-scroll');
+      var elements = document.querySelectorAll('.bfb-animate-on-scroll');
       var observer = new IntersectionObserver(function (entries) {
         entries.forEach(function (entry) {
           if (entry.isIntersecting) {
-            entry.target.classList.add('visible');
+            entry.target.classList.add('bfb-visible');
             observer.unobserve(entry.target);
           }
         });
